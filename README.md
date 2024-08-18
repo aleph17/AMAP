@@ -21,3 +21,13 @@ As Much data As Possible
 
 
 As of April 2024, the segmentation and quantitative analysis of nanostars not overlapping with each other have been finished. However, when the stars’ branches touch each other, the problem becomes harder as it requires separate segmentation of individual nanostars. So far, SAM (Segment-Anything by Meta) has been used, but it hasn’t given the desired results. The plan is to manually segment pictures and feed them into a Deep Learning model, preferably utilizing transfer learning.
+
+As of August 2024, a part of the data processing is completed, and a sample U-net to be used to segment the nanostars is prepared. What's left is to manually prepare the data to be fed into the model. 
+
+**Preliminary plan for the model:**
+The model, or there can be a need for multiple models, to be built is meant to segment the cores of the nanostars and draw skeletons of branches as lines. There should be 4 channels in the output:
+ - background
+ - nanostar
+ - nanostar core
+ - nanostar branch
+
