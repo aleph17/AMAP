@@ -30,16 +30,23 @@ The model, or there can be a need for multiple models, to be built is meant to s
  - nanostar
  - nanostar core
  - nanostar branch
-The plan is to build two specialized models: one for background and nanostar core detection, the other for nanostar branch skeletonization.
+The plan is to build three specialized models: one for background and nanostar core detection, the other for nanostar branch skeletonization, and the remaining to separate individual nanostars as separate.
 
 Example nanostar TEM image:
 ![024](https://github.com/user-attachments/assets/8276bb77-12b7-4321-97b8-a17734d77ba4)
 
 Expected output from the first model:
 ![024 (1)](https://github.com/user-attachments/assets/22ca5d6c-7640-4677-9517-a59756fd2455)
+(The preparation of the segmented data to be fed into the model can be further simplified by applying Gaussian filter and using it as a mask to mark the rough background.)
 
 Expected output from the second model (it may need to use an approach of zoom-in and out concurrently):
 ![024 (2)](https://github.com/user-attachments/assets/5a3f8943-9797-4d01-98e6-6ca707c7bd17)
 The items on the right bottom corner of the image are meant to be erased for cleanliness of the data.
 
-The preparation of the segmented data to be fed into the model can be further simplified by applying Gaussian filter and using it as a mask to mark the rough background.
+Expected out from the third model:
+![024 (4)](https://github.com/user-attachments/assets/1f2fa5dc-3962-4ef3-8f2d-3258313a5597)
+The purple dots are there to mark the home core of a branch.
+
+Once the models give the final output, the plan is to use a CV algorithm to separate nanostar structures individually and measure their core area, branch length.
+
+As the final addition to the project a UI is planned to be implemented so that the user can delete unwanted length and core estimations.
