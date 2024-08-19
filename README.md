@@ -26,10 +26,10 @@ As of August 2024, a part of the data processing is completed, and a sample U-ne
 
 **Preliminary plan for the model:**
 The model, or there can be a need for multiple models, to be built is meant to segment the cores of the nanostars and draw skeletons of branches as lines. There should be 4 channels in the output:
- - background
- - nanostar
- - nanostar core
- - nanostar branch
+ - background (green)
+ - nanostar core (red)
+ - nanostar branch (blue)
+ - connecting point of a core and branch (white)
 The plan is to build three specialized models: one for background and nanostar core detection, the other for nanostar branch skeletonization, and the remaining to separate individual nanostars as separate.
 
 Example nanostar TEM image:
