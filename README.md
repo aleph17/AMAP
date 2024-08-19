@@ -38,6 +38,6 @@ Example nanostar TEM image:
 Expected output from the first model:
 ![024 (1)](https://github.com/user-attachments/assets/22ca5d6c-7640-4677-9517-a59756fd2455)
 
-Expected output from the second model:
+Expected output from the second model (it may need to use an approach of zoom-in and out concurrently):
 ![024 (2)](https://github.com/user-attachments/assets/5a3f8943-9797-4d01-98e6-6ca707c7bd17)
 The items on the right bottom corner of the image are meant to be erased for cleanliness of the data.
