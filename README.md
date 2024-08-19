@@ -41,3 +41,5 @@ Expected output from the first model:
 Expected output from the second model (it may need to use an approach of zoom-in and out concurrently):
 ![024 (2)](https://github.com/user-attachments/assets/5a3f8943-9797-4d01-98e6-6ca707c7bd17)
 The items on the right bottom corner of the image are meant to be erased for cleanliness of the data.
+
+The preparation of the segmented data to be fed into the model can be further simplified by applying Gaussian filter and using it as a mask to mark the rough background.
