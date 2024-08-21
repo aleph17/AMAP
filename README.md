@@ -47,7 +47,10 @@ Expected out from the third model:
 ![024 (4)](https://github.com/user-attachments/assets/1f2fa5dc-3962-4ef3-8f2d-3258313a5597)
 The purple dots are there to mark the home core of a branch.
 
-The preparation of feeding data can be pipelined (except for branch core connectors) by using different colors and separating different masks by CV algorithm given the assumptions that different segment types don't cross each other.
+The preparation of feeding data can be pipelined (except for branch core connectors) by using different colors and separating different masks by CV algorithm given the assumptions that different segment types don't cross each other. However, the assumption is not consistent with the experimental data, there should be prepared 3 masks:
+ 1. Background and Core
+ 2. Branch line
+ 3. Connecting point
 
 Once the models give the final output, the plan is to use a CV algorithm to separate nanostar structures individually and measure their core area, branch length.
 
