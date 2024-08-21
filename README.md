@@ -52,6 +52,7 @@ The preparation of feeding data can be pipelined (except for branch core connect
  2. Branch line
  3. Connecting point
 
+The preparation of to be fed data can be much simplified by using Gaussian noise and thresholding for background and partial thinning & removal of small regions for cores.
 Once the models give the final output, the plan is to use a CV algorithm to separate nanostar structures individually and measure their core area, branch length.
 
 As the final addition to the project a UI is planned to be implemented so that the user can delete unwanted length and core estimations.
