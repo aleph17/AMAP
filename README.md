@@ -58,3 +58,6 @@ Once the models give the final output, the plan is to use a CV algorithm to sepa
 The U-net to be deployed may pose troubles due to the pictures being too big (4096x4096). One option is to reduce the size, but it may lead to crucial information loss - especially for the parts where branches overlap with each other and cores. That's why an option to use is to use minimum layers per step while increasing the depth. Another proposal is to use different-sized kernels in the same floor (i) where one propagates to the ensuing floor (i+1) while the other propagates to a floor multiple steps forward (i+k). This way (i+k) step may get better awareness of an overall situation.
 
 As the final addition to the project a UI is planned to be implemented so that the user can delete unwanted length and core estimations.
+
+## problems
+- how do you store prepared masks? what is the format? how do you prepare them?
