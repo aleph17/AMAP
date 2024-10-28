@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/8b2cedd9-d412-47fb-b92e-612ccd137f33)# AMAP
+# AMAP
 As Much data As Possible
 
 ## Task
@@ -23,9 +23,9 @@ As Much data As Possible
 As of April 2024, the segmentation and quantitative analysis of nanostars not overlapping with each other have been finished. However, when the stars’ branches touch each other, the problem becomes harder as it requires separate segmentation of individual nanostars. The plan is to manually segment pictures with VGG Image Annotator and feed them into a Deep Learning model. There are multiple models being considered - Mask R-CNN, SSD+MobileNetV2, SOLO, YOLAct, and PolarMask.
 
 
-## Example nanostar TEM image:
+### Example nanostar TEM image:
 ![image](https://github.com/user-attachments/assets/abfb9a6e-3293-495d-8901-b9cdcb377a72)
 
-## Expected output from the model:
+### Expected output from the model:
 ![Screenshot from 2024-10-28 11-41-04](https://github.com/user-attachments/assets/5e0b07fb-7e07-4cb5-8b8e-ad9bb7d70a69)
 
