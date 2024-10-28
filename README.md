@@ -22,13 +22,6 @@ As Much data As Possible
 
 As of April 2024, the segmentation and quantitative analysis of nanostars not overlapping with each other have been finished. However, when the stars’ branches touch each other, the problem becomes harder as it requires separate segmentation of individual nanostars. The plan is to manually segment pictures with VGG Image Annotator and feed them into a Deep Learning model. There are multiple models being considered - Mask R-CNN, SSD+MobileNetV2, SOLO, YOLAct, and PolarMask.
 
-**Preliminary plan for the model:**
-The model, or there can be a need for multiple models, to be built is meant to segment the cores of the nanostars and draw skeletons of branches as lines. There should be 4 channels in the output:
- - background (white)
- - nanostar core (red)
- - nanostar branch (blue)
- - connecting point of a core and branch (green)
-The plan is to build three specialized models: one for background and nanostar core detection, the other for nanostar branch skeletonization, and the remaining to separate individual nanostars as separate.
 
 Example nanostar TEM image:
 ![024](https://github.com/user-attachments/assets/8276bb77-12b7-4321-97b8-a17734d77ba4)
