@@ -9,12 +9,12 @@ from PIL.Image import open
 import PIL.Image as Image
 
 
-archive = '/home/muhammad-ali/working/base_data'
-save = '/home/muhammad-ali/working/base_data/processed'
+archive = '/home/muhammad-ali/github/AMAP/segmentation'
+save = '/home/muhammad-ali/github/AMAP/segmentation/processed'
 col_trans = (132, 112, 255, 255)
 
-img_dir = os.path.join(archive, 'images')
-mask_dir = os.path.join(archive, 'masks_01')
+img_dir = os.path.join(archive, 'samples')
+mask_dir = os.path.join(archive, 'masks')
 
 img_list = sorted(os.listdir(img_dir))
 mask_list = sorted(os.listdir(mask_dir))
@@ -26,7 +26,7 @@ mask_dirs = [os.path.join(mask_dir, x) for x in mask_list]
 for i in range(len(img_dirs)):
     image = open(img_dirs[i]).convert("RGBA")
     mask = open(mask_dirs[i]).resize(image.size)
-    mask =  1 - np.array(mask)
+    mask =  1 - np.array(mask)/255
     mask = 190 + 60*mask
 
     shape = (image.size[0], image.size[0], 4)
