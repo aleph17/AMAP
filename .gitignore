@@ -4,6 +4,8 @@ segmentation/
 tf_record/
 wandb/
 BaseModel/
+*.ipynb
+*.json
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
