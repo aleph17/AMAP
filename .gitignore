@@ -1,4 +1,5 @@
 # locally
+data_base/
 images/
 segmentation/
 tf_record/
