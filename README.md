@@ -30,8 +30,9 @@ As of April 2024, the segmentation and quantitative analysis of nanostars not ov
 ### Expected output from the model:
 ![Screenshot from 2024-10-28 11-41-04](https://github.com/user-attachments/assets/5e0b07fb-7e07-4cb5-8b8e-ad9bb7d70a69)
 
-### Result obtained from detectron2 for :
-![r](https://github.com/user-attachments/assets/9940be6c-1a2b-4f25-830d-e8662f5b5619)
+### Result obtained from detectron2 for instance segmentation:
+![r](https://github.com/user-attachments/assets/edbd1924-e27f-43c5-8f4d-e9953090f262)
+
 
 ### Final result obtainable after processing:
 ![image](https://github.com/user-attachments/assets/eb791378-036b-4e09-a0f3-34ce915e98c7)
