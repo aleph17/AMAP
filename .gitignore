@@ -1,5 +1,6 @@
 # locally
 data/
+models/
 images/
 segmentation/
 tf_record/
