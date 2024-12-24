@@ -19,7 +19,7 @@ As Much data As Possible
 
 ## Results
 
-As of December 2024, the segmentation of overlapping nanostars has been completed when they don't exhibit complexity hard even for human eye. The plan is to train with more capable pre-trained models and with larger, augmented data. The results were achieved using detectron2 with ResNeXt-101 as backbone model. Experimenting with YOLOv8 for instance segmentation is also on the list. Using one more U-Net model as an expert to adjust segmentation is also being considered.
+As of December 2024, segmentation of overlapping nanostars has been successfully completed for cases that are not overly complex, even for the human eye. The next steps involve training with more advanced pre-trained models and larger, augmented datasets. The current results were obtained using Detectron2 with a ResNeXt-101 backbone. Future plans include experimenting with YOLOv8 for instance segmentation and considering the use of an additional U-Net model as an expert to refine the segmentation further.
 
 As of April 2024, the segmentation and quantitative analysis of nanostars not overlapping with each other have been finished. However, when the stars’ branches touch each other, the problem becomes harder as it requires separate segmentation of individual nanostars. The plan is to manually segment pictures with VGG Image Annotator and feed them into a Deep Learning model. There are multiple models being considered - Mask R-CNN, SSD+MobileNetV2, SOLO, YOLAct, and PolarMask.
 
