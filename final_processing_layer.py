@@ -72,4 +72,4 @@ out  = cv.drawContours(out, aprx,-1,255,3)
 zeros = np.zeros((1000,1000,3))
 zeros[:,:,1] = out
 result = resized - zeros.astype(int)
-imshow(result)
+cv.imwrite('/home/muhammad-ali/Downloads/line.jpg', result)

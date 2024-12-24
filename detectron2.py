@@ -108,11 +108,11 @@ def process_images(predictor, input_dir, output_dir, metadata):
 
 def main():
     # Setup paths
-    train_json = "/content/drive/MyDrive/ColabNotebooks/data/train/train.json"
-    train_dir = "/content/drive/MyDrive/ColabNotebooks/data/train"
-    val_json = "/content/drive/MyDrive/ColabNotebooks/data/val/val.json"
-    val_dir = "/content/drive/MyDrive/ColabNotebooks/data/val"
-    output_dir = "/content/drive/MyDrive/ColabNotebooks/models/Detectron2_Models"
+    train_json = "...AMAP/data/train/train.json"
+    train_dir = "...AMAP/data/train"
+    val_json = "...AMAP/data/val/val.json"
+    val_dir = "...AMAP/data/val"
+    output_dir = "...AMAP/models/Detectron2_Models"
 
     # Setup and register datasets
     setup_detectron()
